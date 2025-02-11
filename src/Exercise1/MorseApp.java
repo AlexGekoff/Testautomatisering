@@ -34,6 +34,8 @@ public class MorseApp {
                 }
             } catch (NumberFormatException e) {
                 System.out.println(("Fel: Du måste ange en siffra (1,2 eller 3)."));
+            } catch (IllegalArgumentException e) {
+                System.out.println("Fel: " + e.getMessage()); // Visa felmeddelande från undantag
             }
 
         }
